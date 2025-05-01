@@ -1,0 +1,1 @@
+# ThreadMe Backend\n\n1. `npm install`\n2. Setup `.env`\n3. Run with `npm run dev`\n

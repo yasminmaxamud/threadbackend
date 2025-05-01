@@ -1,0 +1,10 @@
+import express from "express";
+import signupRoutes from "./routes/signupRoutes";
+import bookingRoutes from "./routes/bookingRoutes";
+import paymentRoutes from "./routes/paymentRoutes";
+const app = express();
+app.use(express.json());
+app.use("/api/signup", signupRoutes);
+app.use("/api/createBooking", bookingRoutes);
+app.use("/api/createPaymentIntent", paymentRoutes);
+export default app;
